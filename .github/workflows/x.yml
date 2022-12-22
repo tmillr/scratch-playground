@@ -4,7 +4,7 @@ jobs:
   a:
     runs-on: ubuntu-latest
     steps:
-      - uses: tmillr/breaking-change@scratch
+      - uses: tmillr/scratch-playground@master
         with:
           token: ${{ github.token }}
           issueNumber: 1
@@ -12,7 +12,7 @@ jobs:
   b:
     runs-on: windows-2019
     steps:
-      - uses: tmillr/breaking-change@scratch
+      - uses: tmillr/scratch-playground@master
         with:
           token: ${{ github.token }}
           issueNumber: 1
