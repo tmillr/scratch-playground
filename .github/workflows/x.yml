@@ -1,0 +1,19 @@
+on: workflow_dispatch
+
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: tmillr/breaking-change@scratch
+        with:
+          token: ${{ github.token }}
+          issueNumber: 1
+          discussionNumber: 2
+  b:
+    runs-on: windows-2019
+    steps:
+      - uses: tmillr/breaking-change@scratch
+        with:
+          token: ${{ github.token }}
+          issueNumber: 1
+          discussionNumber: 2
