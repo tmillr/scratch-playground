@@ -3,7 +3,7 @@ author: 'Tyler Miller'
 description: 'Automatically update an issue and/or discussion with breaking changes.'
 
 runs:
-  using: 'node16'
+  using: 'node18'
   main: 'index.js'
 branding:
   icon: 'cast'
