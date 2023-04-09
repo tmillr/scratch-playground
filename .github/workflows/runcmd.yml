@@ -1,0 +1,15 @@
+name: Run Command
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+      inputs:
+        cmd:
+          type: string
+
+jobs:
+  runcmd:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ${{ inputs.cmd }}
