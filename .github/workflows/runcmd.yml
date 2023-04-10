@@ -13,6 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
-        working-directory: '~'
       - run: ${{ inputs.cmd }}
-      - run: ${{ env }}
+      - run: ${{ toJSON(env) }}
