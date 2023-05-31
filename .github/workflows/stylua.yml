@@ -1,0 +1,12 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  stylua:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: JohnnyMorganz/stylua-action@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: latest
+          args: -f stylua.toml --verify -- '${{ github.workspace }}'
