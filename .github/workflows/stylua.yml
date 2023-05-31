@@ -9,4 +9,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
-          args: -f stylua.toml --verify -- '${{ github.workspace }}'
+          args: --verify -- '${{ github.workspace }}'
